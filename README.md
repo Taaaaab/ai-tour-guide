@@ -10,15 +10,15 @@ AI Tour Guide powered by OpenAI, using React, Vite and Chakra UI. Type a locatio
 
 **Tech used:** React, Vite, Chakra UI, OpenAI, Google Maps JavaScript API
 
-Began with Traversy Media's keyword extractor as inspiration. Setup API call using OpenAI's davinci-003 for text to provide list of things to do. Then, using Google Map's JavaScript API to load a search map of the results. Additionally, a project to practice using Chakra UI with React.
+Began with Traversy Media's keyword extractor as inspiration. Created components using Chakra UI with header, footer, text area and button. Setup API using OpenAI's davinci-003 for text. API call made with user's input location which returns list of things to do in a modal. Then, Google Map's JavaScript API is loaded below list with a search map of the results. Additionally, a project to practice using Chakra UI with React.
 
 ## Optimizations
 
-Moved all API keys to .env file to prepare for hosting on GitHub. Added separate Chakra UI AspectRatio component to appear below text results with Chakra UI loading circle.
+Moved all API keys to .env file to prepare for hosting. Added separate Chakra UI AspectRatio component to appear below text results with Chakra UI loading circle.
 
 ## Lessons Learned:
 
-First project using both OpenAI, Google Maps JavaScript API and Chakra UI. Chakra UI and Google API documentation pages were extremely useful, Chakra UI even had a specific guide for embedding Google Maps. Became stuck with importing API keys and finally fixed issue after reading guide to importing from .env using Vite (import.meta.env...).
+First project using OpenAI, Google Maps JavaScript API and Chakra UI. Chakra UI and Google API documentation pages were extremely useful, Chakra UI even had a specific guide for embedding Google Maps. Became stuck with importing API keys and finally fixed issue after reading guide to importing from .env using Vite (import.meta.env...).
 
 ## Examples:
 

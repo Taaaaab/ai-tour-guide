@@ -1,6 +1,6 @@
 # AI Tour Guide
 
-AI Tour Guide powered by OpenAI, using React, Vite and Chakra UI. Type a location and click the button to see list of things to do with embedded Google Map API.
+AI Tour Guide powered by OpenAI, using React, Vite and Chakra UI. Type a location and click the button to see list of things to do with embedded Google Maps API.
 
 **Link to project:** https://taaaaab.github.io/ai-tour-guide/
 
@@ -10,7 +10,7 @@ AI Tour Guide powered by OpenAI, using React, Vite and Chakra UI. Type a locatio
 
 **Tech used:** React, Vite, Chakra UI, OpenAI, Google Maps JavaScript API
 
-Began with Traversy Media's keyword extractor as inspiration. Created components using Chakra UI with header, footer, text area and button. Setup API using OpenAI's davinci-003 for text. API call made with user's input location which returns list of things to do in a modal. Then, Google Map's JavaScript API is loaded below list with a search map of the results. Additionally, a project to practice using Chakra UI with React.
+Began with Traversy Media's keyword extractor as inspiration. Created components using Chakra UI with header, footer, text area and button. Setup API using OpenAI's davinci-003 for text. API call made with user's input location which returns list of things to do in a modal. Then, Google Maps JavaScript API is loaded below list with a search map of the results. Additionally, a project to practice using Chakra UI with React.
 
 ## Optimizations
 

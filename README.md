@@ -4,7 +4,7 @@ AI Tour Guide powered by OpenAI, using React, Vite and Chakra UI. Type a locatio
 
 **Link to project:** https://taaaaab.github.io/ai-tour-guide/
 
-![alt tag](https://github.com/Taaaaab/ai-tour-guide/blob/main/src/assets/Screenshot.png)
+![alt tag](https://github.com/Taaaaab/ai-tour-guide/blob/main/src/assets/guide-screenshot.png)
 
 ## How It's Made:
 

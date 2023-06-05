@@ -2,7 +2,7 @@
 
 AI Tour Guide powered by OpenAI, using React, Vite and Chakra UI. Type a location and click the button to see list of things to do with embedded Google Map API.
 
-**Link to project:** https://ai-tour-guide.onrender.com
+**Link to project:** https://taaaaab.github.io/ai-tour-guide/
 
 ![alt tag](https://github.com/Taaaaab/ai-tour-guide/blob/main/src/assets/Screenshot.png)
 

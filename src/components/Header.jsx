@@ -7,7 +7,7 @@ const Header = () => {
     <>
       <Image src={logo} alt="logo" width={150} marginBottom="1rem" />
       <Heading color="white" marginBottom="1rem">
-        AI Tour Guide
+        AI Travel Guide
       </Heading>
       <Text fontSize={24} textAlign="center">
         Type where you're looking to go and we'll provide a list of things to do

@@ -26,7 +26,7 @@ const App = () => {
           // 'Extract keywords from this text. Make the first letter of each word uppercase and separate with commas\n\n' +
           'Suggest things to do in' + text + '',
         temperature: 0.5,
-        max_tokens: 60,
+        max_tokens: 40,
         frequency_penalty: 0.8,
       }),
     };

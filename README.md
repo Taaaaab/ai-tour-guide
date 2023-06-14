@@ -4,7 +4,7 @@ AI Travel Guide powered by OpenAI, using React, Vite and Chakra UI. Type a locat
 
 **Link to project:** https://taaaaab.github.io/ai-travel-guide/
 
-![alt tag](https://github.com/Taaaaab/ai-tour-guide/blob/main/src/assets/guide-screenshot.png)
+![alt tag](https://github.com/Taaaaab/Taaaaab/blob/main/ai-travel-guide.gif)
 
 ## How It's Made:
 

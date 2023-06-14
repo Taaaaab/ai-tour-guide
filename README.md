@@ -2,7 +2,7 @@
 
 AI Travel Guide powered by OpenAI, using React, Vite and Chakra UI. Type a location and click the button to see list of things to do; with a map using the Google Maps API.
 
-**Link to project:** https://taaaaab.github.io/ai-tour-guide/
+**Link to project:** taaaaab.github.io/ai-travel-guide/
 
 ![alt tag](https://github.com/Taaaaab/ai-tour-guide/blob/main/src/assets/guide-screenshot.png)
 

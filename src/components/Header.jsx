@@ -10,7 +10,8 @@ const Header = () => {
         AI Travel Guide
       </Heading>
       <Text fontSize={24} textAlign="center">
-        Type where you're looking to go and we'll provide a list of things to do
+        Type where you're looking to go, add optional price range and click the
+        button to see a list of things to do
       </Text>
     </>
   );

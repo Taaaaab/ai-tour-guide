@@ -34,25 +34,16 @@ const TextInput = ({ extractKeywords }) => {
     <>
       <Box p={4}>
         <RadioGroup onChange={setPrice} value={price}>
-          <Stack direction="row" gap={5}>
-            <Stack direction="column" align="center">
-              <Text fontSize={20} fontWeight="bold">
-                $
-              </Text>
-              <Radio value="cheap"></Radio>
-            </Stack>
-            <Stack direction="column" align="center">
-              <Text fontSize={20} fontWeight="bold">
-                $$
-              </Text>
-              <Radio value="moderately priced"></Radio>
-            </Stack>
-            <Stack direction="column" align="center">
-              <Text fontSize={20} fontWeight="bold">
-                $$$
-              </Text>
-              <Radio value="expensive"></Radio>
-            </Stack>
+          <Stack direction="row">
+            <Radio size="lg" colorScheme="green" value="cheap">
+              $
+            </Radio>
+            <Radio size="lg" colorScheme="green" value="moderately priced">
+              $$
+            </Radio>
+            <Radio size="lg" colorScheme="green" value="expensive">
+              $$$
+            </Radio>
           </Stack>
         </RadioGroup>
       </Box>

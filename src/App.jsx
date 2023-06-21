@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Container, Box } from '@chakra-ui/react';
+import { Container, Box, Radio } from '@chakra-ui/react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import TextInput from './components/TextInput';
@@ -10,7 +10,7 @@ const App = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const extractKeywords = async (text) => {
+  const extractKeywords = async (text, price) => {
     setLoading(true);
     setIsOpen(true);
 
@@ -24,9 +24,9 @@ const App = () => {
         model: 'text-davinci-003',
         prompt:
           // 'Extract keywords from this text. Make the first letter of each word uppercase and separate with commas\n\n' +
-          'Suggest things to do in' + text + '',
+          'Suggest at least 3' + price + 'things to do in' + text + '',
         temperature: 0.5,
-        max_tokens: 40,
+        max_tokens: 110,
         frequency_penalty: 0.8,
       }),
     };

@@ -1,8 +1,18 @@
 import { useState } from 'react';
-import { Textarea, Button, useToast } from '@chakra-ui/react';
+import {
+  Box,
+  Stack,
+  RadioGroup,
+  Radio,
+  Text,
+  Textarea,
+  Button,
+  useToast,
+} from '@chakra-ui/react';
 
 const TextInput = ({ extractKeywords }) => {
   const [text, setText] = useState('');
+  const [price, setPrice] = useState('');
 
   const toast = useToast();
 
@@ -10,18 +20,42 @@ const TextInput = ({ extractKeywords }) => {
     if (text === '') {
       toast({
         title: 'Text field is empty',
-        description: 'Please enter some text to extract keywords',
+        description: 'Please enter a place to see things to do',
         status: 'error',
         duration: 5000,
         isClosable: false,
       });
     } else {
-      extractKeywords(text);
+      extractKeywords(text, price);
     }
   };
 
   return (
     <>
+      <Box p={4}>
+        <RadioGroup onChange={setPrice} value={price}>
+          <Stack direction="row" gap={5}>
+            <Stack direction="column" align="center">
+              <Text fontSize={20} fontWeight="bold">
+                $
+              </Text>
+              <Radio value="cheap"></Radio>
+            </Stack>
+            <Stack direction="column" align="center">
+              <Text fontSize={20} fontWeight="bold">
+                $$
+              </Text>
+              <Radio value="moderately priced"></Radio>
+            </Stack>
+            <Stack direction="column" align="center">
+              <Text fontSize={20} fontWeight="bold">
+                $$$
+              </Text>
+              <Radio value="expensive"></Radio>
+            </Stack>
+          </Stack>
+        </RadioGroup>
+      </Box>
       <Textarea
         bg="blue.400"
         color="white"

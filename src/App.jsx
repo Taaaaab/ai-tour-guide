@@ -24,13 +24,9 @@ const App = () => {
         model: 'text-davinci-003',
         prompt:
           // 'Extract keywords from this text. Make the first letter of each word uppercase and separate with commas\n\n' +
-          'Suggest' +
-          price +
-          'things to do in' +
-          text +
-          'in 200 characters or less',
+          'Suggest' + price + 'things to do in ' + text,
         temperature: 0.5,
-        max_tokens: 100,
+        max_tokens: 70,
         frequency_penalty: 0.8,
       }),
     };

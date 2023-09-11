@@ -13,7 +13,7 @@ import {
   AspectRatio,
 } from '@chakra-ui/react';
 
-const mapsAPI = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+const API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 
 const KeywordsModal = ({ keywords, loading, isOpen, closeModal }) => {
   return (
@@ -35,7 +35,10 @@ const KeywordsModal = ({ keywords, loading, isOpen, closeModal }) => {
               <CircularProgress isIndeterminate color="blue.300" />
             ) : (
               <iframe
-                src={`https://www.google.com/maps/embed/v1/search?key=${mapsAPI}&q=${keywords}`}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}
+                  &q=${keywords}`}
               />
             )}
           </AspectRatio>
